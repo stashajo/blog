@@ -1,0 +1,508 @@
+/*
+
+CSS responsive file that refers to HEADER and FOOTER on every page
+*/
+/* 
+    Created on : Sep 14, 2016, 5:43:40 PM
+    Author     : Stasha
+*/
+
+
+@media screen and (min-width: 480px) {
+    .my-drawings .row figure img {
+        margin: 0 auto;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    .header-top .links{
+        float:left;
+    } 
+    .header-top .search{
+        float:right;
+    } 
+    .header-top .btn-default {
+        padding-top: 0px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .mainNav{
+        display: inline-block;
+    }
+    .dropdown-menu .options:nth-child(3){
+        margin-top: 0px;
+    }
+    .dropdown-menu .options:nth-child(4){
+        margin-top: 0px;
+    }
+    .dropdown-menu a.moments{
+        font-size: 12px;
+    }
+
+
+    .dropdown-menu .options figure{
+        height: 120px;
+    }
+    .dropdown-menu .options figure img{
+        height: auto;
+    }
+    .dropdown-menu{
+        margin-left: -50px;
+    }
+    .header-middle a{
+        font-family: 'Sacramento', cursive;
+        font-size: 46px;
+        letter-spacing: 3px;
+        color:  #000;
+        text-decoration: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown {
+
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #000;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 100;
+        width: auto;
+        margin-left: -30px;
+        text-align: left;
+    }
+
+    .dropdown-content a {
+        color: #e91e63;
+        text-decoration: none;
+        display: block;
+        padding-bottom: 5px;
+        font-size: 14px;
+        letter-spacing: 2px
+    }
+    .dropdown-content .options{
+        margin-left: 0px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .carousel-control .fa{
+        font-size: 100px;
+        margin-top: 100%;
+    }  
+
+    .other ul.social li a{
+        display: inline-block;
+        width:30px;
+        height:30px;
+        background: #000;
+        border-radius: 50%;
+        margin-left: 0px;    
+    }
+    .other ul.social li a .fa{
+        font-size: 12px;
+        color:  #fff;
+        padding-left: 0px;
+        padding-top: 10px;
+
+    }
+
+    .galereya-grid {
+        margin: -10px!important;
+    }
+    .carousel .carousel-caption { 
+        bottom:5%;
+    }
+
+    .carousel .carousel-caption a{
+        color: #fff;
+        text-decoration: none;
+        border:4px solid #fff;
+        padding:20px;
+        font-size: 20px;
+        font-family:  'Josefin Sans', sans-serif;
+        letter-spacing: 3px;
+        font-weight: bold;
+    }
+    .carousel .carousel-caption img{
+        display: block;
+        margin: 0 auto;
+    }
+    .carousel .carousel-caption p{ 
+        color: #fff;
+        font-size: 14px;
+        letter-spacing: 2px;
+        font-family:  'Josefin Sans', sans-serif;
+        font-weight: bold;
+        display: block; 
+
+    }
+    .carousel .carousel-caption h2{ 
+        color: #fff;
+        font-size: 20px;
+        letter-spacing: 2px;
+        font-family:  'Josefin Sans', sans-serif;
+        font-weight: bold;
+        margin-bottom: 40px;
+        display: block; 
+    }
+    .share a{
+        font-size: 21px;
+        font-family: 'Josefin Sans', sans-serif;
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-right: 10px;
+    }
+    .share a:hover{
+        color: #e91e63;
+        transition: color 0.4s;
+    }
+
+    .share ul{
+        display: inline;
+        border-top:  1px solid #d5d5d5;
+        padding-top: 25px;
+        border-bottom:  1px solid #d5d5d5;
+        padding-bottom: 25px;
+        margin-left: 20px;
+    }
+    .share ul li a{
+        font-size: 16px;
+    }
+    
+    .container {
+        width: 742px;
+    }
+    .my-drawings figure {
+        padding-bottom: 25px;
+    }
+    /*     drawing-gallery PAGE */
+    .drawing-gallery .text1, .drawing-gallery .text2, .drawing-gallery .text3, .drawing-gallery .text4 {
+        margin: 0;
+        padding: 15px 10px 0 10px;
+        height: 247px;
+    }
+    .drawing-gallery img {
+        height: 247px;
+    }
+    .drawing-gallery .col-xs-12, .drawing-gallery .col-sm-6 {
+        padding: 0;
+    }
+    .drawing-gallery .floatright {
+        float: right;
+    }
+    .drawing-gallery .arrow_box {
+        position: relative;
+        background: #f3f3f3;
+        z-index: 10;
+    }
+    .drawing-gallery .arrow_box:after {
+        right: 100%;
+        top: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(243, 243, 243, 0);
+        border-top-color: #f3f3f3;
+        border-width: 10px;
+        margin-top: -10px;
+        left: -8px;
+        transform: rotate(90deg);
+    }
+    .drawing-gallery .arrow_box1 {
+        position: relative;
+        background: #f7dde6;
+    }
+    .drawing-gallery .arrow_box1:after {
+        top: 50%;
+        left: 100%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(243, 243, 243, 0);
+        border-top-color: #f7dde6;
+        border-width: 10px;
+        margin-left: 0;
+        transform: rotate(270deg);
+    }
+    /* ----------------------------- SPONSORS PAGE ---- */
+    .sponsors-pics h1 {
+        margin: 15px auto;
+    }
+    .sponsors-pics .container::after {
+        margin: 45px auto;
+    }
+
+}
+
+
+
+
+
+@media (min-width: 992px) {
+
+
+    .header-bottom ul li{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .dropdown-menu{
+        margin-left: -150px;
+    }
+    .dropdown-menu a.moments{
+        font-size: 16px;
+    }
+    .dropdown-menu{
+        font-size: 18px;
+    }
+    .dropdown-menu .options figure{
+        height: 180px;
+    }
+    .footer-top ul{
+        margin-left: 180px;
+    }
+    .footer-top .back{
+        float: right;   
+    }
+    .dropdown {
+
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #000;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 100;
+        width: 1168px;
+        margin-left: -150px;
+        text-align: left;
+    }
+
+    .dropdown-content a {
+        color: #e91e63;
+        text-decoration: none;
+        display: block;
+        padding-bottom: 8px;
+        font-size: 18px;
+        letter-spacing: 2px
+    }
+    .dropdown-content .options{
+        margin-left: -20px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+
+    .carousel-control .fa{
+        font-size: 150px;
+        margin-top: 70%;
+    }
+
+    .other ul.social li a{
+        display: inline-block;
+        width:50px;
+        height:50px;
+        background: #000;
+        border-radius: 50%;
+        margin-left: -5px;    
+    }
+    .other ul.social li a .fa{
+        font-size: 20px;
+        color:  #fff;
+        padding-left: 0px;
+        padding-top: 15px;
+    }
+
+    .carousel .carousel-caption { 
+        bottom:10%;
+    }
+    .carousel .carousel-caption a{
+        color: #fff;
+        text-decoration: none;
+        border:4px solid #fff;
+        padding:20px;
+        font-size: 20px;
+        font-family:  'Josefin Sans', sans-serif;
+        letter-spacing: 3px;
+        font-weight: bold;
+    }
+    .carousel .carousel-caption p{ 
+        color: #fff;
+        font-size: 14px;
+        letter-spacing: 2px;
+        font-family:  'Josefin Sans', sans-serif;
+        font-weight: bold;   
+    }
+    .carousel .carousel-caption h2{ 
+        color: #fff;
+        font-size: 20px;
+        letter-spacing: 2px;
+        font-family:  'Josefin Sans', sans-serif;
+        font-weight: bold;
+        margin-bottom: 80px;  
+    }
+    .container {
+        width: 948px;
+    }
+    .drawing-gallery img {
+        height: auto;
+    }
+    .drawing-gallery .text1, .drawing-gallery .text2, .drawing-gallery .text3, .drawing-gallery .text4 {
+        padding: 35px 30px 0 30px;
+        height: 317px;
+    }
+    .drawing-gallery button {
+        margin-top: 40px;
+    }
+
+}
+
+
+
+@media (min-width: 1200px) {
+    .dropdown-menu{
+        margin-left: -250px;
+    }
+    .dropdown-menu figure{
+        margin-bottom: 20px;
+    }
+
+
+    .carousel-control .fa{
+        font-size: 200px;
+        margin-top: 80%;
+    }
+
+    figure.second img {
+        margin-left: 10px
+    }
+    figure.fifth img {
+        margin-left: 10px;
+        margin-top: -60px;  
+    }
+    .other ul.social li a{
+        display: inline-block;
+        width:50px;
+        height:50px;
+        background: #000;
+        border-radius: 50%;
+        margin-left: -5px;
+
+        letter-spacing: 15px;
+    }
+    .other ul.social li a .fa{
+        font-size: 20px;
+        color:  #fff;
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+    .carousel .carousel-caption { 
+        bottom:20%;
+    }
+    .carousel .carousel-caption a{
+        color: #fff;
+        text-decoration: none;
+        border:4px solid #fff;
+        padding:30px;
+        font-size: 24px;
+        font-family:  'Josefin Sans', sans-serif;
+        letter-spacing: 3px;
+        font-weight: bold;
+    }
+    .carousel .carousel-caption p{ 
+        color: #fff;
+        font-size: 20px;
+        letter-spacing: 2px;
+        font-family:  'Josefin Sans', sans-serif;
+        font-weight: bold;   
+    }
+    .carousel .carousel-caption h2{ 
+        color: #fff;
+        font-size: 30px;
+        letter-spacing: 2px;
+        font-family:  'Josefin Sans', sans-serif;
+        font-weight: bold;
+        margin-bottom: 120px;
+
+    }
+    .share ul li a{
+        font-size: 16px;
+        margin-right: 30px;
+    }
+    .share a {
+        font-size: 21px;
+        font-family: 'Josefin Sans', sans-serif;
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-right: 60px;
+    }
+    .share ul{
+        margin-left: 0px;
+    }
+    
+    .container {
+        width: 1180px;
+    }
+    .drawing-gallery .text1, .drawing-gallery .text2, .drawing-gallery .text3, .drawing-gallery .text4 {
+        padding: 55px 50px 0 50px;
+        height: 390px;
+    }
+    .drawing-gallery p {
+        margin: 0 0 30px 0;
+        line-height: 25px;
+    }
+    .drawing-gallery button {
+        margin: 0;
+        margin-top: 50px;
+        padding: 16px 50px 14px 50px;
+        border: 4px solid #171717;
+    }
+    /* ----------------------------- SPONSORS PAGE ---- */
+    .sponsors-pics h1 {
+        margin: 35px auto;
+    }
+    .sponsors-pics .container::after {
+        margin: 75px auto;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
